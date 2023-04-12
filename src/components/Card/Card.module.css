@@ -82,11 +82,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 750px) {
-  .character {
-    width: 250px;
-  }
-
+@media only screen and (min-width: 300px) {
   .character:first-child {
     display: block;
   }
@@ -97,6 +93,12 @@ h1 {
     right: 0;
     bottom: 0;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .character {
+    width: 250px;
   }
 }
 
