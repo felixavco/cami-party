@@ -1,0 +1,81 @@
+.base {
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 212, 255, 1) 33%,
+    rgba(198, 240, 255, 1) 66%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.bg {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.clouds {
+  z-index: 1;
+  background-image: url('../../images/clouds.png');
+  background-repeat: repeat-x;
+  animation: clouds 30s linear infinite alternate-reverse;
+}
+
+.blocks {
+  z-index: 2;
+  background-image: url('../../images/blocks.png');
+  animation: blocks 1s ease-in-out infinite alternate-reverse;
+}
+
+.layer1 {
+  z-index: 3;
+  background-image: url('../../images/layer1.png');
+  animation: layers 5s linear infinite alternate-reverse;
+}
+
+.layer2 {
+  z-index: 4;
+  background-image: url('../../images/layer2.png');
+  animation: layers 2s linear infinite alternate;
+}
+
+.layer3 {
+  z-index: 5;
+  background-image: url('../../images/layer3.png');
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes blocks {
+  0% {
+    transform: scale(0.98) translate(3px, 6px);
+  }
+  100% {
+    transform: scale(1) translate(-3px, -6px);
+  }
+}
+
+@keyframes layers {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
