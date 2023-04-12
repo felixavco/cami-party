@@ -1,12 +1,10 @@
 .card {
   position: relative;
-  width: inherit;
   border: solid 5px #dc6994;
   border-radius: 25px;
   padding: 16px;
   background-color: rgb(255, 255, 255);
   max-width: 360px;
-  min-width: 300px;
   margin: 0 auto;
   color: #3e3e3e;
 }
@@ -17,7 +15,6 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  /* padding: 32px 24px 0 24px; */
 }
 
 .character {
@@ -36,12 +33,61 @@
   justify-content: flex-end;
 }
 
+.title {
+  margin-top: -16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title img {
+  height: 220px;
+  margin-bottom: 16px;
+}
+
+table {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+table td:first-of-type {
+  font-weight: 700;
+}
+
+table tr {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 8px;
+}
+
+h1 {
+  color: #dc6994;
+  margin-bottom: 8px;
+}
+
+.fonts {
+  text-align: center;
+}
+
+.mapicon {
+  width: 30px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-height: 700px) {
+  .title {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 750px) {
   .character {
     width: 250px;
   }
 
-  .character:first-of-type {
+  .character:first-child {
     display: block;
   }
 
@@ -50,12 +96,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 90%;
     justify-content: space-between;
   }
 }
 
 @media only screen and (min-width: 900px) {
+  table {
+    font-size: 28px;
+    margin-top: 16px;
+  }
+
+  table tr {
+    margin-bottom: 16px;
+  }
   .character {
     width: 300px;
   }
@@ -73,50 +126,4 @@
   .characters {
     width: 70%;
   }
-}
-
-.title {
-  margin-top: -16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.title img {
-  height: 250px;
-}
-
-.title img {
-  margin-bottom: 16px;
-}
-
-table {
-  font-size: 28px;
-  margin-top: 16px;
-}
-
-table td:first-of-type {
-  font-weight: 700;
-}
-
-table tr {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin-bottom: 16px;
-}
-
-h1 {
-  color: #dc6994;
-  margin-bottom: 8px;
-}
-
-.fonts {
-  text-align: center;
-}
-
-.mapicon {
-  width: 30px;
-  margin-left: 20px;
 }
