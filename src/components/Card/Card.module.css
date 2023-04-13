@@ -42,7 +42,7 @@
 }
 
 .title img {
-  height: 220px;
+  height: 180px;
   margin-bottom: 16px;
 }
 
@@ -62,9 +62,14 @@ table tr {
   margin-bottom: 8px;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 h1 {
   color: #dc6994;
   margin-bottom: 8px;
+  font-size: 24px;
 }
 
 .fonts {
@@ -103,6 +108,13 @@ h1 {
 }
 
 @media only screen and (min-width: 900px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
   table {
     font-size: 28px;
     margin-top: 16px;
